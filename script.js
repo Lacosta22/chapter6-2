@@ -131,11 +131,7 @@ function generatePlaceholder() {
 		}
 	}
 }
-/* run initial form configuration functions */
-function setUpPage() {
-	createEventListeners();
-	generatePlaceholder();
-}
+
 if (window.addEventListener){
 	window.addEventListener("load", setUpPage, false);
 } else if (window.attachEvent) {
