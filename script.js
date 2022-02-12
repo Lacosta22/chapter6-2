@@ -43,7 +43,7 @@ function validateRequired() {
 }
 /* create event listeners */
 function createEventListeners() {
-	var form = document.getelementsByTagName("form") [0];
+	var form = document.getElementsByTagName("form") [0];
 	if (form.addEventListener) {
 		form.addEventListener("submit", validateForm, false)
 	} else if (form.attachEvent) {
@@ -61,7 +61,7 @@ function validteForm(evt) {
 	validateRequired();
 	validateNumbers();
 	if (formValidity === true) {
-		document.getelementsByTagName("form") [0].submit();
+		document.getElementsByTagName("form") [0].submit();
 	}
 }
 /* run setup functions when page finishes loading */
